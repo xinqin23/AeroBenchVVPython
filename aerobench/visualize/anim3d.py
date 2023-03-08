@@ -238,17 +238,17 @@ def make_anim(res, filename, viewsize=1000, viewsize_z=1000, f16_scale=30, trail
         mode_text.set_color(col)
         mode_text.set_text('Mode: {}'.format(mode.capitalize()))
 
-        alt_text.set_text('h = {:.2f} ft'.format(alt))
-        v_text.set_text('V = {:.2f} ft/sec'.format(speed))
-
-        alpha_text.set_text('$\\alpha$ = {:.2f} deg'.format(rad2deg(alpha)))
-        beta_text.set_text('$\\beta$ = {:.2f} deg'.format(rad2deg(beta)))
-
-        nz_text.set_text('$N_z$ = {:.2f} g'.format(Nz_list[frame]))
-        ps_text.set_text('$p_s$ = {:.2f} deg/sec'.format(rad2deg(ps_list[frame])))
-
-        ang_text.set_text('[$\\phi$, $\\theta$, $\\psi$] = [{:.2f}, {:.2f}, {:.2f}] deg'.format(\
-            rad2deg(phi), rad2deg(theta), rad2deg(psi)))
+        # alt_text.set_text('h = {:.2f} ft'.format(alt))
+        # v_text.set_text('V = {:.2f} ft/sec'.format(speed))
+        #
+        # alpha_text.set_text('$\\alpha$ = {:.2f} deg'.format(rad2deg(alpha)))
+        # beta_text.set_text('$\\beta$ = {:.2f} deg'.format(rad2deg(beta)))
+        #
+        # nz_text.set_text('$N_z$ = {:.2f} g'.format(Nz_list[frame]))
+        # ps_text.set_text('$p_s$ = {:.2f} deg/sec'.format(rad2deg(ps_list[frame])))
+        #
+        # ang_text.set_text('[$\\phi$, $\\theta$, $\\psi$] = [{:.2f}, {:.2f}, {:.2f}] deg'.format(\
+        #     rad2deg(phi), rad2deg(theta), rad2deg(psi)))
 
         s = f16_scale[index]
         s = 25 if s is None else s
